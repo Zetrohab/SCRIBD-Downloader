@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Roboto font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1f1f1f; /* Dark background for futuristic feel */
+}
+
+#container {
+    width: 80%;
+    max-width: 800px;
+    padding: 40px;
+    background-color: #2f2f2f; /* Darker container background */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Increased shadow for depth */
+    text-align: center;
+    position: relative; /* Necessary for absolute positioning inside */
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #66fcf1; /* Turquoise */
+    font-size: 36px; /* Larger font size */
+    letter-spacing: 2px; /* Spacing for modern look */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    padding: 15px;
+    width: 70%;
+    border-radius: 8px;
+    border: 1px solid #333; /* Darker border */
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    background-color: #444; /* Darker input background */
+    color: #fff; /* Light text color */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #66fcf1; /* Turquoise on focus */
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #66fcf1; /* Turquoise button */
+    color: #fff;
+    border: none;
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer;
+    font-size: 20px; /* Slightly smaller font size */
+    transition: background-color 0.3s ease;
+    position: absolute; /* Positioned absolutely */
+    bottom: -40px; /* Move below the container */
+    right: 50%; /* Center horizontally */
+    transform: translateX(50%); /* Center horizontally */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Shadow for the button */
+    z-index: 1000; /* Ensure button is on top of other content */
+}
+
+button:hover {
+    background-color: #00b3b3; /* Darker turquoise on hover */
+}
+
+button:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+#signature {
+    font-size: 14px;
+    color: #ccc; /* Lighter signature color */
+    margin-top: 40px;
+}
+
+#signature a {
+    color: #66fcf1; /* Turquoise links */
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+#signature a:hover {
+    text-decoration: underline;
+}
